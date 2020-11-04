@@ -5,15 +5,26 @@
 */ 
 
 
-var description = "describe something on food"
+var description = "me being the imposter yet arguing with the entire group being sus"
+
+var amongusImage; 
+
+function preload (){
+  amongusImage = loadImage ("amongus.png");
+}
 
 function setup () {
 	var canvas = createCanvas (640, 360);
 	canvas.drawingContext.miterLimit = 2;
+  imageMode(CENTER);
 }
 
 function draw() {
 	background ("yellow")
+
+/* image */
+image (amongusImage, mouseX, mouseY,amongusImage.width / 4, amongusImage.height/ 4);
+
 
 
     textSize (30);
@@ -23,14 +34,18 @@ function draw() {
     textStyle("BOLD")
     textFont ("courier new");
 
+
+
     textAlign(CENTER, CENTER);
 	text ("My Class Portfolio" , width / 2, height / 2 );
 
+
 	var titleWidth = textWidth ("My Class Portfolio")
 
-    textSize(14);
+    textSize(16);
     noStroke();
 	text(description, 320, height / 2 + 100);
+  blendMode (BLEND);
 
 
 
