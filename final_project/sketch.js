@@ -7,7 +7,6 @@
 var dub
 var beat
 var acoustic
-var reggae
 
 function preload(){
 	dub = loadSound ('dub.mp3');
@@ -20,6 +19,9 @@ function preload(){
 function setup(){
 	createCanvas(640, 360);
 	pattern ();
+}
+function pattern (){
+
 }
 
 function mousePressed (){
@@ -47,9 +49,10 @@ function button (x, y, s, sound) {
 		fill (154, 203, 67);
 }
 triangle (x - 80, y - 50, x - 50, y + 100, x + 50, y + 100, s);
-
-	pattern();
 }
+
+
+
 function pattern (){
 	background ('black');
 
