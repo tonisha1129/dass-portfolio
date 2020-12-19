@@ -22,7 +22,7 @@ function draw (){
  	        circle (x + 10, y + 40, 10);
  	        circle (x + 40, y + 40, 10);
 
- 	        triangle (x + 30, y + 10,  x + 20, y + 20,x + 30, y + 30);
+ 	        triangle (x + 30, y + 20,  x + 20, y + 20,x + 30, y + 30);
  	        }
  	    }
 	
